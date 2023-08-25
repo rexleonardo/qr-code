@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Custom */
+
+:root {
+  --blue: #2C7DFA;
+  --blue-shade: #3685FF;
+  --dark-navy: #1F314F;
+  --grey: #7D889E;
+  --light-grey: #D5E1EF;
+  --white: #FFFFFF;
+}
+
+body {
+  background-color: var(--light-grey);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
